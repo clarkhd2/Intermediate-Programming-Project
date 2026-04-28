@@ -1,0 +1,17 @@
+{
+  "name": "practice11-dashboard-render",
+  "version": "1.0.0",
+  "description": "Practice 11 Node.js dashboard deployment for Render",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "render",
+    "dashboard",
+    "deployment"
+  ],
+  "author": "Hunter Clark",
+  "license": "ISC"
+}

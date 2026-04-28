@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Dashboard - Project 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>My Personal Dashboard</h1>
+    <p>Project 3: Simulating API Interaction</p>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="card">
+      <h2>Welcome</h2>
+      <p>
+        This dashboard demonstrates simulated API interaction using asynchronous
+        JavaScript, loading states, error handling, and user feedback.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Quick Notes</h2>
+      <ul>
+        <li>Uses JSONPlaceholder as a public API source</li>
+        <li>Displays posts in responsive cards</li>
+        <li>Supports favorites and expandable details</li>
+      </ul>
+    </section>
+
+    <section class="card api-section">
+      <div class="section-top">
+        <div>
+          <h2>Fetched Data</h2>
+          <p>Click a button below to interact with post data from a public API.</p>
+        </div>
+
+        <div class="button-group">
+          <button id="loadPostsBtn" title="Fetch all posts from the API">
+            View All Posts
+          </button>
+          <button id="reloadPostsBtn" title="Reload the post list">
+            Reload
+          </button>
+          <button id="clearPostsBtn" title="Remove all displayed posts">
+            Clear
+          </button>
+        </div>
+      </div>
+
+      <div id="statusMessage" class="status-message">Ready to load data.</div>
+      <div id="postsContainer" class="posts-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Created for Module 5 Dashboard Project</p>
+  </footer>
+
+  <script src="dashboard_project.js"></script>
+</body>
+</html>

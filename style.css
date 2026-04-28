@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+}
+
+.site-header {
+  background: #273043;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.site-header h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+.dashboard-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #dd0426;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+button.secondary {
+  background: #9197ae;
+}
+
+button.favorite-btn {
+  background: #f02d3a;
+}
+
+.status-message {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  background: #eff6ee;
+  color: #273043;
+  font-weight: bold;
+}
+
+.status-message.loading {
+  background: #fff4cc;
+  color: #7a5d00;
+}
+
+.status-message.error {
+  background: #ffd9de;
+  color: #8b1023;
+}
+
+.status-message.success {
+  background: #dff6e4;
+  color: #1f6b35;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.post-card {
+  border: 1px solid #d9deea;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.post-card h3 {
+  margin-top: 0;
+  color: #273043;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.post-details {
+  display: none;
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
+
+.post-details.show {
+  display: block;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.favorite-badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #dd0426;
+  font-weight: bold;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  .section-top {
+    flex-direction: column;
+  }
+
+  .button-group {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
